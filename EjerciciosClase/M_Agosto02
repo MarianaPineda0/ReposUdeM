@@ -1,0 +1,20 @@
+#1.Dada una cadena, calcule la longitud de la cadena usando la recursividad
+def long_cadena(cadena):
+    if cadena == "":
+        return 0
+    else:
+        return 1 + long_cadena(cadena[1:])
+
+print(long_cadena("Juan"))
+print(long_cadena("Canela"))
+
+#2.Escriba una función recursiva para imprimir el reverso de una cadena
+def rev_cadena(cadena):
+    if cadena == "":
+        return
+    rev_cadena(cadena[1:])
+    return (cadena[1:]) + cadena[0]
+
+
+print(rev_cadena("Mariana"))
+print(rev_cadena("Juan Camilo"))
